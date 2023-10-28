@@ -1,0 +1,81 @@
+.mainDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  background-color: #e5dada;
+  padding: 1rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.mainDiv:not(:first-child) {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.mainDiv:last-child{
+  margin-bottom: 2rem;
+}
+
+.mainDiv:hover .editBtn {
+  display: flex;
+  cursor: pointer;
+}
+
+.mainDiv:hover .deleteBtn {
+  display: flex;
+  cursor: pointer;
+}
+
+.taskItemText {
+  max-width: 30rem;
+}
+
+.taskEditItemText {
+  width: 28rem;
+}
+
+.editBtn {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.deleteBtn {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+}
+
+.updateBtn {
+  width: 8rem;
+}
+
+.createdDate {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+@media (max-width: 940px) {
+  .mainDiv {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .editBtn {
+    right: 1rem;
+    top: 1rem;
+    max-width: 1.5rem;
+  }
+
+  .deleteBtn {
+    right: 5rem;
+    top: 1rem;
+    max-width: 1.5rem;
+  }
+}

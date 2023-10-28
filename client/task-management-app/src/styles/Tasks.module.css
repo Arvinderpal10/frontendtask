@@ -1,0 +1,56 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #da70d6;
+  padding: 1rem;
+  font-size: 3rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  color: whitesmoke;
+  letter-spacing: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout {
+  font-size: 1rem;
+  margin: auto 0;
+  letter-spacing: 0.2rem;
+  float: right;
+  cursor: pointer;
+  color: red;
+  font-weight: 500;
+}
+
+.mainTaskDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* mobile and tablets */
+@media (max-width: 940px) {
+  .mainDiv div {
+    width: 100%;
+    flex: 1;
+  }
+  .navbar {
+    position: relative;
+    width: 100%;
+  }
+
+  .logout {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+    width: 1rem !important;
+  }
+
+  .mainTaskDiv {
+    flex-direction: column;
+  }
+}
